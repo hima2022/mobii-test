@@ -1,0 +1,4 @@
+name: "Content Payment API Rendering"
+description: "This is an testing module for API rendering"
+type: 'module'
+core_version_requirement: 8.x || 9.x

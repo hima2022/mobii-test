@@ -1,0 +1,28 @@
+content_payment.read-api:
+  path: '/read-api'
+  defaults:
+    _controller: '\Drupal\content_payment\Controller\ContentApi::readApi'
+    _title: 'Content Api'
+  requirements:
+    _permission: 'access content'
+content_payment.payment:
+  path: '/payment'
+  defaults:
+    _form: '\Drupal\content_payment\Form\Payment'
+    _title: 'Payment Gateway'
+  requirements:
+    _permission: 'access content'
+content_payment.payment.success:
+  path: '/success'
+  defaults:
+    _controller: '\Drupal\content_payment\Controller\ContentApi::success'
+    _title: 'Payment Gateway'
+  requirements:
+    _permission: 'access content'
+content_payment.payment.hash:
+  path: '/hash-generate'
+  defaults:
+    _controller: '\Drupal\content_payment\Controller\ContentApi::hash'
+    _title: 'Payment Gateway'
+  requirements:
+    _permission: 'access content'

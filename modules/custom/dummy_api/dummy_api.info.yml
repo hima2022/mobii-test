@@ -1,0 +1,4 @@
+name: "Dummy API Rendering"
+description: "This is an sample module"
+type: 'module'
+core_version_requirement: 8.x || 9.x

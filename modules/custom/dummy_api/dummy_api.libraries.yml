@@ -1,0 +1,5 @@
+payment-js:
+  js:
+    #https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js: {type: external, minified: true}
+    https://sboxcheckout-static.citruspay.com/bolt/run/bolt.min.js: {type: external, minified: true, attributes: { id: bolt, bolt-color: e34524, bolt-logo: http://boltiswatching.com/wp-content/uploads/2015/09/Bolt-Logo-e14421724859591.png}}
+    js/payment.js: {}

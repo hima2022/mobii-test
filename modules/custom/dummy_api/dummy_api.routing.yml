@@ -1,0 +1,28 @@
+dymmy_api.read-api:
+  path: '/read-api'
+  defaults:
+    _controller: '\Drupal\dummy_api\Controller\RenderApi::readApi'
+    _title: 'Dummy Api'
+  requirements:
+    _permission: 'access content'
+dymmy_api.payment:
+  path: '/payment-gateway'
+  defaults:
+    _form: '\Drupal\dummy_api\Form\Payment'
+    _title: 'Dummy Payment Gateway'
+  requirements:
+    _permission: 'access content'
+dymmy_api.payment.success:
+  path: '/success'
+  defaults:
+    _controller: '\Drupal\dummy_api\Controller\RenderApi::success'
+    _title: 'Dummy Payment Gateway'
+  requirements:
+    _permission: 'access content'
+dymmy_api.payment.hash:
+  path: '/hash-generate'
+  defaults:
+    _controller: '\Drupal\dummy_api\Controller\RenderApi::hash'
+    _title: 'Dummy Payment Gateway'
+  requirements:
+    _permission: 'access content'
